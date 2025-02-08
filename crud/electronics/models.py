@@ -6,6 +6,7 @@ class Product(models.Model):
     name = models.CharField(max_length=100)
     desc = models.TextField()
     price = models.IntegerField()
+    image = models.ImageField(upload_to="post_images/", null=True)
 
 
     def __str__(self):
